@@ -1,9 +1,10 @@
+
 import React from "react";
 import './App.css'
-import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { LandingPage } from "./components-landing/LandingPage.jsx";
 import { LoginPage } from "./components-login/LoginPage";
-import {ForgetPassword} from "./components-login/ForgetPassword.jsx";
+import { ForgetPassword } from "./components-login/ForgetPassword.jsx";
 import { OtpForgotPassword } from "./components-login/OtpForgotPassword.jsx";
 import { ResetPassword } from "./components-login/ResetPassword.jsx";
 import { PasswordResetSuccess } from "./components-login/PasswordResetSuccess.jsx";
@@ -21,54 +22,51 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <LoginPage/>
+    element: <LoginPage />
   },
-   {
+  {
     path: "/forgotpassword",
-    element: <ForgetPassword/>
-  }
-  ,
-   {
+    element: <ForgetPassword />
+  },
+  {
     path: "/otpforgotpassword",
-    element: <OtpForgotPassword/>
-  } ,
-   {
+    element: <OtpForgotPassword />
+  },
+  {
     path: "/resetpassword",
-    element: <ResetPassword/>
+    element: <ResetPassword />
   },
   {
-    path:"/resetpasswordsuccess",
-    element:<PasswordResetSuccess/>
+    path: "/resetpasswordsuccess",
+    element: <PasswordResetSuccess />
   },
   {
-    path:"/welcome",
-    element:<Welcome/>
-  }, 
-   {
-    path:"/CompanyRegistration",
-    element:<CompanyRegistration/>
-  }, 
-   {
-    path:"/InternRegistration",
-    element:<InternRegistration/>
-  }, 
-   {
-    path:"/AdminRegistration",
-    element:<AdminRegistration/>
-  }, 
-   {
-    path:"/MentorRegistration",
-    element:<MentorRegistration/>
-  }, 
-   {
-    path:"/HRRegistration",
-    element:<HRRegistration/>
+    path: "/welcome",
+    element: <Welcome />
+  },
+  {
+    path: "/CompanyRegistration",
+    element: <CompanyRegistration />
+  },
+  {
+    path: "/InternRegistration",
+    element: <InternRegistration />
+  },
+  {
+    path: "/AdminRegistration",
+    element: <AdminRegistration />
+  },
+  {
+    path: "/MentorRegistration",
+    element: <MentorRegistration />
+  },
+  {
+    path: "/HRRegistration",
+    element: <HRRegistration />
   }
-],
-
-
-
-);
+], {
+  basename: "/Internms-2.0"
+});
 
 function App() {
   return <RouterProvider router={router} />;
