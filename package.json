@@ -1,5 +1,5 @@
 {
-  "homepage": "https://gowthamsundar06-blip.github.io/ims-2.0",
+  "homepage": "https://gowthamsundar06-blip.github.io/Internms-2.0",
   "name": "ims-2.0",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.8",

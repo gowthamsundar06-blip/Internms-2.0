@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Internms-2.0/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
